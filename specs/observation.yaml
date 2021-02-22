@@ -48,7 +48,14 @@ is_empty:
     - 'False'
 
 scientific_name:
-  empty: false
+  empty: true
+  if:
+    - observation_type:
+        allowed: [Human, human]
+      allowed: Homo sapiens
+    - observation_type:
+        allowed: [Animal, animal]
+      empty: false
 
 vernacular_name:
   empty: true
