@@ -15,7 +15,7 @@ camera_id:
   empty: false
 
 location_id: # Field in template, but not in documentation
-  empty: false
+  empty: true
 
 location_name:
   empty: true
