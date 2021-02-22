@@ -13,12 +13,15 @@ sequence_id:
 
 file_name:
   empty: true
-  regex: '(\w|\/)+\.(jpg|JPG)'
+  regex: '(\w|\/)+\.(jpg|JPG|AVI)'
 
 file_mediatype:
   empty: false
   allowed:
-    - 'image/jpeg'
+    - image/jpeg
+    - image/jpg
+    - image
+    - video
 
 image_id: # Field in template, but not in documentation
   empty: true
