@@ -20,6 +20,9 @@ file_mediatype:
   allowed:
     - 'image/jpeg'
 
+image_id: # Field in template, but not in documentation
+  empty: true
+
 timestamp:
   empty: false
   dateformat: '%Y-%m-%d %H:%M:%S'
@@ -39,7 +42,7 @@ observation_type:
     - vehicle
 
 is_empty:
-  empty: false
+  empty: true
   allowed:
     - 'True'
     - 'False'
