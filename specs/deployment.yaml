@@ -54,9 +54,16 @@ reason_for_end:
 orientation:
   empty: true
   allowed:
+    - North
     - north
+
+    - East
     - east
+
+    - South
     - south
+
+    - West
     - west
 
 slope:
@@ -68,19 +75,37 @@ slope:
 aspect:
   empty: true
   allowed:
+    - 'No'
     - 'no'
+
+    - North
     - north
+
+    - East
     - east
+
+    - South
     - south
+
+    - West
     - west
 
 bait_type:
   empty: true
   allowed:
+    - None
     - none
+
+    - Scent
     - scent
+
+    - Food
     - food
+
+    - Visual
     - visual
+
+    - Acoustic
     - acoustic
 
 bait_description:
@@ -109,6 +134,8 @@ detection_zone:
   allowed:
     - Full
     - full
+
+    - Centered
     - centered
 
 ir_mode:
@@ -116,15 +143,22 @@ ir_mode:
   allowed:
     - Far
     - far
+
+    - Near
     - near
 
 flash_type:
   empty: false
   allowed:
     - White flash
+    - white flash
+
     - Infrared flash
+    - infrared flash
     - Infrared # added
+    
     - Black flash
+    - black flash
 
 images_per_trigger_daytime:
   empty: true

@@ -11,13 +11,28 @@ study_design_code:
 sensor_layout:
   empty: false
   allowed:
+    - Simple random
     - simple random
+    
+    - Systematic random (grid-based)
     - systematic random (grid-based)
+    
     - Clustered (random arrays)
+    - clustered (random arrays)
+    
+    - Opportunistic
     - opportunistic
+    
+    - On roads - opportunistic
     - on roads - opportunistic
+    
+    - On roads - random
     - on roads - random
+    
+    - Targeted
     - targeted
+
+    - Experimental
     - experimental
 
 distance_streets:
@@ -45,17 +60,27 @@ stratification_type:
 sensor_mode:
   empty: false
   allowed:
+    - Sensor detection
     - sensor detection
+
     - Time Lapse
+    - Time lapse
+    - time lapse
+
     - Both
+    - both
 
 detection_mode:
   empty: false
   allowed:
     - Video
+    - video
+
     - Pictures
     - pictures
+
     - Both
+    - both
 
 individual_individuals:
   empty: true

@@ -30,8 +30,13 @@ observation_type:
   empty: true
   allowed:
     - Human
+    - human
+
     - Animal
+    - animal
+
     - Vehicle
+    - vehicle
 
 is_empty:
   empty: false
@@ -60,13 +65,16 @@ age_class:
   empty: true
   allowed:
     - Adult
+    - adult
     - Juvenile
+    - juvenile
 
 sex:
   empty: true
   allowed:
     - Female
     - female
+
     - Male
     - male
 
