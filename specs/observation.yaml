@@ -79,6 +79,10 @@ age_class:
   allowed:
     - Adult
     - adult
+
+    - Subadult
+    - subadult
+
     - Juvenile
     - juvenile
 
