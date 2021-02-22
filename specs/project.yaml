@@ -1,0 +1,48 @@
+# Scope: Research project
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+project_id:
+  empty: false
+
+project_name:
+  empty: false
+
+project_objectives:
+  empty: true
+
+temporal_start:
+  empty: false
+  numberformat: 'x'
+  min: 2010
+  max: 2025
+
+temporal_end:
+  empty: false
+  numberformat: 'x'
+  min: 2010
+  max: 2021
+
+organisation_name:
+  empty: false
+
+working_group:
+  empty: true
+
+project_admin:
+  empty: false
+
+project_admin_email:
+  empty: false
+  regex: '[\w.]+@[\w.]+'
+
+country_code:
+  empty: true
+  minlength: 3
+  maxlength: 3
+
+embargo_period:
+  empty: true
+  numberformat: 'x'
+  min: 0
+  max: 240

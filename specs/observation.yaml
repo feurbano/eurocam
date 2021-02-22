@@ -1,0 +1,94 @@
+# Scope: Observation
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+observation_id:
+  empty: false
+
+deployment_id:
+  empty: false
+
+sequence_id:
+  empty: true
+
+file_name:
+  empty: true
+  regex: '(\w|\/)+\.(jpg|JPG)'
+
+file_mediatype:
+  empty: false
+  allowed:
+    - 'image/jpeg'
+
+timestamp:
+  empty: false
+  dateformat: '%Y-%m-%d %H:%M:%S'
+  mindate: 2010-01-01
+  maxdate: 2021-02-28
+
+observation_type:
+  empty: true
+  allowed:
+    - Human
+    - Animal
+    - Vehicle
+
+is_empty:
+  empty: false
+  allowed:
+    - 'True'
+    - 'False'
+
+scientific_name:
+  empty: false
+
+vernacular_name:
+  empty: true
+
+uncertainty:
+  empty: true
+  numberformat: '.2'
+  min: 0
+  max: 1
+
+count:
+  empty: true
+  numberformat: 'x'
+  min: 1
+
+age_class:
+  empty: true
+  allowed:
+    - Adult
+    - Juvenile
+
+sex:
+  empty: true
+  allowed:
+    - Female
+    - female
+    - Male
+    - male
+
+is_marked:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+individual_id:
+  empty: true
+
+indidvidual_note: # sic
+  empty: true
+
+image_favourite:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+distance:
+  empty: true
+  numberformat: 'x'
+  min: 0

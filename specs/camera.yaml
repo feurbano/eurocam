@@ -1,0 +1,27 @@
+# Scope: Camera
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+project_id:
+  empty: false
+
+camera_id:
+  empty: false
+
+brand:
+  empty: false
+
+model:
+  empty: false
+
+firmware:
+  empty: true
+
+serial_number:
+  empty: true
+
+year_purchased:
+  empty: true
+  numberformat: 'x'
+  min: 2010
+  max: 2020

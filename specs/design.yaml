@@ -1,0 +1,85 @@
+# Scope: Study design
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+project_id:
+  empty: false
+
+study_design_code:
+  empty: false
+
+sensor_layout:
+  empty: false
+  allowed:
+    - simple random
+    - systematic random (grid-based)
+    - Clustered (random arrays)
+    - opportunistic
+    - on roads - opportunistic
+    - on roads - random
+    - targeted
+    - experimental
+
+distance_streets:
+  empty: true
+  numberformat: 'x'
+
+feature_type:
+  empty: true
+
+sensor_cluster:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+stratification:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+stratification_type:
+  empty: true
+
+sensor_mode:
+  empty: false
+  allowed:
+    - sensor detection
+    - Time Lapse
+    - Both
+
+detection_mode:
+  empty: false
+  allowed:
+    - Video
+    - Pictures
+    - pictures
+    - Both
+
+individual_individuals:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+empty_pictures:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+classification_platform:
+  empty: false
+
+description_of_study_design:
+  empty: true
+
+information_humans:
+  empty: true
+  allowed:
+    - 'True'
+    - 'False'
+
+species_of_interest:
+  empty: true

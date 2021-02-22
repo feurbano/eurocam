@@ -1,0 +1,150 @@
+# Scope: Deployment
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+project_id:
+  empty: false
+
+study_design_code:
+  empty: false
+
+deployment_id:
+  empty: false
+
+camera_id:
+  empty: false
+
+location_id: # Field in template, but not in documentation
+  empty: false
+
+location_name:
+  empty: true
+
+latitude:
+  empty: false
+  numberformat: '.5'
+  min: 35.75
+  max: 71.23
+
+longitude:
+  empty: false
+  numberformat: '.5'
+  min: -10.72
+  max: 40.60
+
+start:
+  empty: false
+  dateformat: '%Y-%m-%d %H:%M:%S'
+  mindate: 2010-01-01
+  maxdate: 2021-02-28
+
+end:
+  empty: false
+  dateformat: '%Y-%m-%d %H:%M:%S'
+  mindate: 2010-01-01
+  maxdate: 2021-02-28
+
+timezone:
+  empty: false
+  regex: 'UTC\+\d'
+
+reason_for_end:
+  empty: true
+
+orientation:
+  empty: true
+  allowed:
+    - north
+    - east
+    - south
+    - west
+
+slope:
+  empty: true
+  numberformat: 'x'
+  min: 0
+  max: 100
+
+aspect:
+  empty: true
+  allowed:
+    - 'no'
+    - north
+    - east
+    - south
+    - west
+
+bait_type:
+  empty: true
+  allowed:
+    - none
+    - scent
+    - food
+    - visual
+    - acoustic
+
+bait_description:
+  empty: true
+
+camera_height:
+  empty: true
+  numberformat: 'x'
+  min: 0
+  max: 500
+
+camera_angle:
+  empty: true
+  numberformat: 'x'
+  min: 0
+  max: 360
+
+hunting:
+  empty: false
+  allowed:
+    - 'True'
+    - 'False'
+
+detection_zone:
+  empty: true
+  allowed:
+    - Full
+    - full
+    - centered
+
+ir_mode:
+  empty: true
+  allowed:
+    - Far
+    - far
+    - near
+
+flash_type:
+  empty: false
+  allowed:
+    - White flash
+    - Infrared flash
+    - Infrared # added
+    - Black flash
+
+images_per_trigger_daytime:
+  empty: true
+  numberformat: 'x'
+  min: 1
+
+images_per_trigger_nighttime:
+  empty: true
+  numberformat: 'x'
+  min: 1
+
+trigger_delay_day:
+  empty: true
+  numberformat: 'x'
+  min: 0
+
+trigger_delay_night:
+  empty: true
+  numberformat: 'x'
+  min: 0
+
+comments:
+  empty: true

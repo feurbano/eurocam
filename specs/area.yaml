@@ -1,0 +1,83 @@
+# Scope: Study area
+# Author: Peter Desmet
+# Whip: https://github.com/inbo/whip
+
+study_area_code:
+  empty: false
+
+project_id:
+  empty: false
+
+country:
+  empty: false
+
+region:
+  empty: true
+
+coordinates_latitude:
+  empty: true
+  numberformat: '.5'
+  min: 35.75
+  max: 71.23
+
+coordinates_longitude:
+  empty: true
+  numberformat: '.5'
+  min: -10.72
+  max: 40.60
+
+shapefile_available:
+  empty: false
+  allowed:
+    - 'True'
+    - 'False'
+
+size:
+  empty: true
+  min: 1
+  max: 10000
+
+protection_category_I:
+  empty: true
+  allowed:
+    - IUCN1a
+    - IUCN 1b
+    - IUCN 2
+    - IUCN 3
+    - IUCN 4
+    - IUCN 5
+    - IUCN 6
+    - Special Protection Area (SPA)
+    - Flora-Fauna-Habitat
+    - Ramsar Site
+
+protection_category_II:
+  empty: true
+  allowed:
+    - IUCN1a
+    - IUCN 1b
+    - IUCN 2
+    - IUCN 3
+    - IUCN 4
+    - IUCN 5
+    - IUCN 6
+    - Special Protection Area (SPA)
+    - Flora-Fauna-Habitat
+    - Ramsar Site
+
+protection_category_III:
+  empty: true
+  allowed:
+    - IUCN1a
+    - IUCN 1b
+    - IUCN 2
+    - IUCN 3
+    - IUCN 4
+    - IUCN 5
+    - IUCN 6
+    - Special Protection Area (SPA)
+    - Flora-Fauna-Habitat
+    - Ramsar Site
+
+description_habitat:
+  empty: true
